@@ -70,8 +70,8 @@ def monitoramento():
         pesoSoloUmido = sensor[8]
         pesoSoloSeco = sensor[7]
         concentracao = sensor[10]
-        VALOR_MINIMO = 17381 #sensor[2] umido
-        VALOR_MAXIMO = 30766 #sensor[3]seco
+        VALOR_MINIMO = sensor[2]
+        VALOR_MAXIMO = sensor[3]
         tag = sensor[1]
 
         logging.info("{} pesoSoloUmido: {} | pesoSoloSeco: {} | concentracao: {} | VALOR_MINIMO: {} | VALOR_MAXIMO: {} | tag: {}".format(datetime.datetime.now(), pesoSoloUmido, pesoSoloSeco, concentracao, VALOR_MINIMO, VALOR_MAXIMO, tag))
